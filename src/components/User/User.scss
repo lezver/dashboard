@@ -1,0 +1,22 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.sidebar__user {
+	margin-top: auto;
+	display: flex;
+	align-items: start;
+
+	column-gap: $u12;
+
+	> div {
+		& > p {
+			font-size: $u14;
+		}
+		& > span {
+			font-size: $u12;
+			color: $boulder;
+			font-weight: $fw-r;
+		}
+	}
+}

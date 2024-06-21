@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.sidebar {
+	background-color: $white;
+	padding: $u36 $u28 $u76;
+
+	display: flex;
+	flex-direction: column;
+	gap: $u64;
+}

@@ -1,71 +1,113 @@
 {
-  "logo": "Dashboard",
-  "vershon": "v.01",
-  "aside": ["Dashboard", "Product", "Customers", "Income", "Promote", "Help"],
-  "customers": [
-    {
-      "name": "Jane Cooper",
-      "company": "Microsoft",
-      "phone": "(225) 555-0118",
-      "email": "jane@microsoft.com",
-      "country": "United States",
-      "status": "Active"
-    },
-    {
-      "name": "Floyd Miles",
-      "company": "Yahoo",
-      "phone": "(205) 555-0100",
-      "email": "floyd@yahoo.com",
-      "country": "Kiribati",
-      "status": "Inactive"
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    },
-    {
-      "name": "",
-      "company": "",
-      "phone": "",
-      "email": "",
-      "country": "",
-      "status": ""
-    }
-  ]
+	"sidebar": {
+		"logo": "Dashboard",
+		"vershon": "v.01",
+		"list": [
+			{
+				"name": "Dashboard",
+				"alt": "key",
+				"arrowAlt": "arrow"
+			},
+			{
+				"name": "Product",
+				"alt": "cube",
+				"arrowAlt": "arrow"
+			},
+			{
+				"name": "Customers",
+				"alt": "icon",
+				"arrowAlt": "arrow"
+			},
+			{
+				"name": "Income",
+				"alt": "wallet",
+				"arrowAlt": "arrow"
+			},
+			{
+				"name": "Promote",
+				"alt": "discont",
+				"arrowAlt": "arrow"
+			},
+			{
+				"name": "Help",
+				"alt": "question",
+				"arrowAlt": "arrow"
+			}
+		],
+		"user": {
+			"name": "Evano",
+			"position": "Project Manager"
+		}
+	},
+	"customers": [
+		{
+			"name": "Jane Cooper",
+			"company": "Microsoft",
+			"phone": "(225) 555-0118",
+			"email": "jane@microsoft.com",
+			"country": "United States",
+			"status": "Active"
+		},
+		{
+			"name": "Floyd Miles",
+			"company": "Yahoo",
+			"phone": "(205) 555-0100",
+			"email": "floyd@yahoo.com",
+			"country": "Kiribati",
+			"status": "Inactive"
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		},
+		{
+			"name": "",
+			"company": "",
+			"phone": "",
+			"email": "",
+			"country": "",
+			"status": ""
+		}
+	],
+	"dashboard": "Dashboard",
+	"product": "Product",
+	"income": "Income",
+	"promote": "Promote",
+	"help": "Help"
 }

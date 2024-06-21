@@ -1,0 +1,51 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.sidebar__nav {
+	& > img {
+		filter: invert(50%);
+	}
+	& > ul {
+		@extend %list-style;
+		display: flex;
+		flex-direction: column;
+		row-gap: $u28;
+
+		& > li > a {
+			padding: $u11;
+			color: $bali-hai;
+			display: flex;
+			column-gap: $u10;
+			border-radius: $u8;
+			align-items: center;
+			transition: all $time $time-distribution;
+
+			&:hover,
+			&:focus {
+				opacity: 0.75;
+				cursor: pointer;
+			}
+
+			&.active {
+				background-color: $royal-blue;
+				color: $white;
+				&:hover,
+				&:focus {
+					opacity: 1;
+					cursor: pointer;
+				}
+			}
+
+			& > img ~ img {
+				&:last-child {
+					margin-left: auto;
+				}
+			}
+
+			& > .active {
+				filter: brightness(200%);
+			}
+		}
+	}
+}

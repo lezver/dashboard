@@ -1,0 +1,28 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.sidebar__logo {
+	display: flex;
+	gap: $u11;
+
+	transition: all $time $time-distribution;
+
+	& > img {
+		width: 31px;
+		height: 33px;
+	}
+
+	& > span {
+		font-weight: $fw-sb;
+		font-size: $u26;
+		color: $black;
+
+		& > span {
+			margin-left: $u4;
+			font-weight: $fw-m;
+			font-size: $u10;
+			color: $gray2;
+		}
+	}
+}
