@@ -1,5 +1,5 @@
 "use client";
-import { sidebar } from "@/data/library.json";
+import data from "@/data/library.json";
 import Image from "next/image";
 import Link from "next/link";
 import "./Nav.scss";
@@ -12,64 +12,14 @@ import question from "../../../public/sidebar/question.svg";
 import wallet from "../../../public/sidebar/wallet.svg";
 import arrow from "../../../public/sidebar/arrow.svg";
 import { useEffect, useState } from "react";
-
-type listType = {
-	name: string;
-	arrowAlt: string;
-	alt: string;
-};
-
-type picturesType = {
-	cube?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-	discont?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-	icon?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-	key?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-	wallet?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-	question?: {
-		src: string;
-		width: number;
-		height: number;
-		blurHeight: number;
-		blurWidth: number;
-	};
-};
+import { listType, picturesType } from "@/typesOrInterface/types";
 
 const Nav: React.FC = () => {
 	const [list, setList] = useState<any[]>([]);
 	const pathname = usePathname();
 
 	useEffect(() => {
-		const list: listType[] = sidebar.list;
+		const list: listType[] = data.sidebar.list;
 		const arrOfPictures: picturesType[] = [];
 		arrOfPictures.push(
 			{ discont },

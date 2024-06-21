@@ -1,7 +1,6 @@
 @import "../sass/variables";
 @import "../sass/mixins";
 @import "../sass/placeholders";
-@import "../sass/main";
 
 *,
 *:after,
@@ -50,5 +49,26 @@ button {
 
 	@include bp(des) {
 		padding: 0;
+	}
+}
+
+.main {
+	flex: 1 1 auto;
+
+	padding: $u41 $u71;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: $u51;
+
+	> h1 {
+		@extend %visually-hidden;
+	}
+
+	& > .dashboard {
+		flex: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

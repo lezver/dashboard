@@ -1,0 +1,10 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.promote {
+	flex: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
