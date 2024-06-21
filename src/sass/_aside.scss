@@ -1,0 +1,93 @@
+.aside {
+	background-color: $white;
+	padding: $u36 $u28 $u76;
+
+	display: flex;
+	flex-direction: column;
+	gap: $u64;
+
+	> .aside__logo {
+		display: flex;
+
+		gap: $u11;
+
+		transition: all $time $time-distribution;
+
+		& > img {
+			width: 31px;
+			height: 33px;
+		}
+
+		& > span {
+			font-weight: $fw-sb;
+			font-size: $u26;
+			color: $black;
+
+			& > span {
+				margin-left: $u4;
+				font-weight: $fw-m;
+				font-size: $u10;
+				color: $gray2;
+			}
+		}
+	}
+
+	> .aside__nav {
+		& > ul {
+			@extend %list-style;
+			display: flex;
+			flex-direction: column;
+			row-gap: $u28;
+
+			& > li {
+				padding: $u11;
+				color: $bali-hai;
+				display: flex;
+				column-gap: $u10;
+				border-radius: $u8;
+				align-items: center;
+				transition: all $time $time-distribution;
+
+				&:hover,
+				&:focus {
+					opacity: 0.75;
+					cursor: pointer;
+				}
+
+				&.active {
+					background-color: $royal-blue;
+					color: $white;
+					&:hover,
+					&:focus {
+						opacity: 1;
+						cursor: pointer;
+					}
+				}
+
+				& > img ~ img {
+					&:last-child {
+						margin-left: auto;
+					}
+				}
+			}
+		}
+	}
+
+	> .aside__user {
+		margin-top: auto;
+		display: flex;
+		align-items: end;
+		column-gap: $u12;
+
+		> div {
+			> p {
+				font-size: $u14;
+			}
+			> span {
+				font-size: $u12;
+				color: $boulder;
+				font-weight: $fw-r;
+			}
+		}
+	}
+}

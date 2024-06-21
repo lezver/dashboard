@@ -1,0 +1,71 @@
+{
+  "logo": "Dashboard",
+  "vershon": "v.01",
+  "aside": ["Dashboard", "Product", "Customers", "Income", "Promote", "Help"],
+  "customers": [
+    {
+      "name": "Jane Cooper",
+      "company": "Microsoft",
+      "phone": "(225) 555-0118",
+      "email": "jane@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "name": "Floyd Miles",
+      "company": "Yahoo",
+      "phone": "(205) 555-0100",
+      "email": "floyd@yahoo.com",
+      "country": "Kiribati",
+      "status": "Inactive"
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    },
+    {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": "",
+      "country": "",
+      "status": ""
+    }
+  ]
+}

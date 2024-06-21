@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: $zicron1;
+  font-family: $ff;
+  font-weight: $fw-m;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  margin: 0;
+  padding: 0;
+}
+// svg {
+//   display: block;
+// }
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100%;
+  padding: 0 $u28;
+
+  display: flex;
+
+  @include bp(tab) {
+    padding: 0 $u36;
+  }
+
+  @include bp(des) {
+    padding: 0;
+  }
+}
