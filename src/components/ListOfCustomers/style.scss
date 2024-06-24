@@ -1,0 +1,42 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.customers__table {
+	border-collapse: collapse;
+	font-size: $u14;
+	margin-bottom: $u30;
+
+	tr {
+		padding: 14px;
+		border-bottom: 1px solid $gallery;
+	}
+
+	& > thead > tr > th {
+		padding: 14px;
+		color: $bombay;
+	}
+
+	& > tbody > tr > td {
+		text-align: center;
+		padding: $u24 0;
+	}
+	& > tbody > tr > td > .active {
+		margin: 0 auto;
+		color: $deep-sea;
+		padding: $u4 $u12;
+		border-radius: $u4;
+		background-color: $mountain-meadow38;
+		border: $u1 solid $persian-green;
+		width: 80px;
+	}
+	& > tbody > tr > td > .inactive {
+		margin: 0 auto;
+		color: $monza;
+		padding: $u4 $u12;
+		background-color: $your-pink;
+		border: $u1 solid $monza;
+		border-radius: $u4;
+		width: 80px;
+	}
+}

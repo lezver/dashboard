@@ -1,0 +1,56 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.customers__control-panel {
+	display: flex;
+	justify-content: space-between;
+
+	& > p {
+		font-size: $u14;
+		font-weight: $fw-m;
+		color: $bombay;
+	}
+
+	& > ul {
+		@extend %list-style;
+		display: flex;
+		column-gap: $u12;
+
+		> li > button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: $u24;
+			height: $u24;
+			font-size: $u12;
+			font-weight: $fw-m;
+			color: $river-bed;
+			background-color: $wild-sand;
+			border: $u1 solid $gallery;
+			border-radius: $u4;
+			transition: opacity $time $time-distribution,
+				transform $time $time-distribution;
+
+			&.active {
+				background-color: $royal-blue;
+				color: $white;
+				border-color: $royal-blue;
+			}
+
+			&:hover,
+			&:focus {
+				opacity: 0.75;
+			}
+
+			&:active {
+				transform: scale(0.95);
+				opacity: 1;
+			}
+		}
+
+		> li:last-child {
+			transform: rotateY(180deg);
+		}
+	}
+}

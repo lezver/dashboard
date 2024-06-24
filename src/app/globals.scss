@@ -33,6 +33,7 @@ h6 {
 button {
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
 }
 
 .container {
@@ -59,10 +60,21 @@ button {
 
 	display: flex;
 	flex-direction: column;
-	row-gap: $u51;
 
 	> h1 {
 		@extend %visually-hidden;
+	}
+
+	& > .main__title {
+		width: auto;
+		height: auto;
+		margin: 0;
+		clip: auto;
+		overflow: auto;
+		position: static;
+		margin-bottom: $u51;
+		font-size: $u24;
+		font-weight: $fw-m;
 	}
 
 	& > .dashboard {

@@ -1,5 +1,4 @@
 "use client";
-import data from "@/data/library.json";
 import Image from "next/image";
 import Link from "next/link";
 import "./Nav.scss";
@@ -13,13 +12,14 @@ import wallet from "../../../public/sidebar/wallet.svg";
 import arrow from "../../../public/sidebar/arrow.svg";
 import { useEffect, useState } from "react";
 import { listType, picturesType } from "@/typesOrInterface/types";
+import getList from "@/utils/getList";
 
 const Nav: React.FC = () => {
 	const [list, setList] = useState<any[]>([]);
 	const pathname = usePathname();
 
 	useEffect(() => {
-		const list: listType[] = data.sidebar.list;
+		const list: listType[] = getList();
 		const arrOfPictures: picturesType[] = [];
 		arrOfPictures.push(
 			{ discont },
