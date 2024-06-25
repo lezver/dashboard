@@ -75,6 +75,7 @@
 			column-gap: $u20;
 		}
 		@include bp(des) {
+			flex-direction: column;
 			width: 306px;
 		}
 	}
