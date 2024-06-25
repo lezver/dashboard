@@ -1,8 +1,8 @@
-import "./style.scss";
+import "./customers.scss";
 import data from "@/data/library.json";
-import Search from "@/components/Search/Search";
-import ListOfCustomers from "@/components/ListOfCustomers/ListOfCustomers";
-import ControlPanel from "@/components/ControlPanel/ControlPanel";
+import Search from "@/components/Search";
+import ListOfCustomers from "@/components/ListOfCustomers";
+import ControlPanel from "@/components/ControlPanel";
 
 const Page: React.FC = () => {
 	const { title } = data.customers;

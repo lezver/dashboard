@@ -1,0 +1,63 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/placeholders";
+
+.customers__table {
+	display: flex;
+	overflow-x: scroll;
+	margin-bottom: $u20;
+
+	& > table {
+		flex: 1 1 auto;
+		border-collapse: collapse;
+		font-size: $u14;
+		margin-bottom: $u10;
+
+		& > thead > tr > th {
+			white-space: nowrap;
+			padding: $u14 0;
+			padding-right: $u51;
+			color: $bombay;
+			text-align: start;
+		}
+		& > thead > tr > th:last-child {
+			padding-right: 0;
+			text-align: center;
+		}
+
+		tr {
+			border-bottom: 1px solid $gallery;
+		}
+
+		& > tbody > tr > td {
+			white-space: nowrap;
+			padding: $u8;
+
+			@include bp(tab) {
+				padding: $u24 0;
+			}
+		}
+		& > tbody > tr > td > .active {
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			color: $deep-sea;
+			padding: $u4 $u12;
+			border-radius: $u4;
+			background-color: $mountain-meadow38;
+			border: $u1 solid $persian-green;
+			width: 80px;
+		}
+		& > tbody > tr > td > .inactive {
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			color: $monza;
+			padding: $u4 $u12;
+			background-color: $your-pink;
+			border: $u1 solid $monza;
+			border-radius: $u4;
+			width: 80px;
+		}
+	}
+}

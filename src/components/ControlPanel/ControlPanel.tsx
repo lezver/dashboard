@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./ControlPanel.scss";
 import data from "@/data/library.json";
 import arrow from "../../../public/customers/arrow.svg";
 import Image from "next/image";

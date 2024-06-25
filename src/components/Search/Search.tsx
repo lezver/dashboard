@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./style.scss";
+import "./Search.scss";
 import data from "@/data/library.json";
 import searchIcon from "../../../public/customers/search.svg";
 

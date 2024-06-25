@@ -4,10 +4,21 @@
 
 .customers__search {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
 	@extend %list-style;
-	margin-bottom: $u40;
+	margin-bottom: $u20;
+	row-gap: $u10;
+
+	@include bp(tab) {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: $u40;
+		row-gap: 0;
+	}
+
+	@include bp(des) {
+	}
 
 	> li:first-child {
 		display: flex;
@@ -20,9 +31,13 @@
 		}
 
 		& > p {
+			text-align: center;
 			color: $mountain-meadow;
 			font-size: $u14;
 			font-weight: $fw-r;
+			@include bp(tab) {
+				text-align: start;
+			}
 		}
 	}
 

@@ -9,7 +9,17 @@
 
 	column-gap: $u12;
 
-	> div {
+	@include bp(tab) {
+		margin-top: 0;
+	}
+	@include bp(des) {
+		margin-top: auto;
+	}
+	& > img {
+		border-radius: 50%;
+	}
+
+	& > div {
 		& > p {
 			font-size: $u14;
 		}

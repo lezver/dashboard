@@ -3,10 +3,79 @@
 @import "../../sass/placeholders";
 
 .sidebar {
-	background-color: $white;
-	padding: $u36 $u28 $u76;
-
 	display: flex;
 	flex-direction: column;
-	gap: $u64;
+	padding: $u10;
+	background-color: $white;
+
+	@include bp(tab) {
+		padding: $u36 $u28;
+
+		gap: $u20;
+	}
+
+	@include bp(des) {
+		padding: $u36 $u28 $u76;
+
+		gap: $u64;
+	}
+
+	& > .sidebar__menu {
+		position: absolute;
+		top: $u15;
+		right: $u20;
+		border: none;
+
+		font-size: $u20;
+		font-weight: $fw-sb;
+		background-color: transparent;
+		@include bp(tab) {
+			display: none;
+		}
+	}
+
+	& > .sidebar__active {
+		display: flex;
+		flex-direction: column;
+		row-gap: $u28;
+		position: absolute;
+		top: 59px;
+		left: 0;
+		background-color: inherit;
+		width: 100%;
+		height: calc(100vh - 59px);
+		padding: $u24 $u10;
+		overflow: hidden;
+		z-index: 99;
+		transition: all $time $time-distribution;
+	}
+	& > .sidebar__inactive {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		row-gap: $u28;
+		background-color: inherit;
+		top: 59px;
+		left: 0;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+
+		transition: all $time $time-distribution;
+	}
+
+	& > .sidebar__block {
+		@include bp(tab) {
+			position: static;
+			overflow: auto;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			column-gap: $u20;
+		}
+		@include bp(des) {
+			width: 306px;
+		}
+	}
 }

@@ -2,6 +2,7 @@
 	"sidebar": {
 		"logo": "Dashboard",
 		"vershon": "v.01",
+		"menu": "MENU",
 		"list": [
 			{
 				"name": "Dashboard",

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import "./style.scss";
+import "./promote.scss";
 import { usePathname } from "next/navigation";
 import getList from "@/utils/getList";
 

@@ -4,7 +4,14 @@
 
 .customers__control-panel {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	gap: $u16;
+
+	@include bp(tab) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	& > p {
 		font-size: $u14;
@@ -16,6 +23,16 @@
 		@extend %list-style;
 		display: flex;
 		column-gap: $u12;
+
+		& > li:nth-child(-6n + 6) {
+			display: none;
+		}
+
+		@include bp(tab) {
+			& > li:nth-child(-6n + 6) {
+				display: block;
+			}
+		}
 
 		> li > button {
 			display: flex;

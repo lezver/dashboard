@@ -6,8 +6,15 @@
 	display: flex;
 	flex-direction: column;
 
-	padding: $u30 $u38;
+	border-radius: $u8;
+	padding: $u10;
 	background-color: $white;
-	border-radius: $u30;
 	box-shadow: 0px 10px 60px 0px #e2ecf980;
+
+	@include bp(tab) {
+		border-radius: $u30;
+		padding: $u30 $u38;
+	}
+	@include bp(des) {
+	}
 }

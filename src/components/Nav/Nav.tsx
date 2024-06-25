@@ -14,7 +14,17 @@ import { useEffect, useState } from "react";
 import { listType, picturesType } from "@/typesOrInterface/types";
 import getList from "@/utils/getList";
 
-const Nav: React.FC = () => {
+enum Tags {
+	A = "A",
+	Img = "IMG",
+	Span = "SPAN",
+}
+
+interface NavProps {
+	setIsHidden: (bool: boolean) => void;
+}
+
+const Nav: React.FC<NavProps> = ({ setIsHidden }) => {
 	const [list, setList] = useState<any[]>([]);
 	const pathname = usePathname();
 
@@ -39,8 +49,17 @@ const Nav: React.FC = () => {
 		setList(list);
 	}, []);
 
+	const switchOff = ({ target }: any) => {
+		(target.nodeName === Tags.A ||
+			target.nodeName === Tags.Span ||
+			target.nodeName === Tags.Img) &&
+			setIsHidden(false);
+
+		document.body.classList.remove("is-hidden");
+	};
+
 	return (
-		<nav className="sidebar__nav">
+		<nav className="sidebar__nav" onClick={switchOff}>
 			<ul>
 				{list.map((item, index) =>
 					index === 0 ? (

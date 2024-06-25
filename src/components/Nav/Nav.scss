@@ -3,14 +3,29 @@
 @import "../../sass/placeholders";
 
 .sidebar__nav {
-	& > img {
-		filter: invert(50%);
-	}
+	overflow-y: auto;
+
 	& > ul {
 		@extend %list-style;
 		display: flex;
 		flex-direction: column;
-		row-gap: $u28;
+		gap: $u28;
+
+		@include bp(tab) {
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			& > li > a > img ~ img {
+				display: none;
+			}
+		}
+
+		@include bp(des) {
+			flex-direction: column;
+			& > li > a > img ~ img {
+				display: block;
+			}
+		}
 
 		& > li > a {
 			padding: $u11;
