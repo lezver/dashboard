@@ -5,6 +5,7 @@
 .customers {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: auto;
 
 	border-radius: $u8;
 	padding: $u10;
@@ -14,6 +15,7 @@
 	@include bp(tab) {
 		border-radius: $u30;
 		padding: $u30 $u38;
+		margin-bottom: 0;
 	}
 	@include bp(des) {
 	}

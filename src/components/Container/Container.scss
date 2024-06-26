@@ -21,13 +21,14 @@
 
 .main {
 	flex: 1 1 auto;
-
+	overflow-y: auto;
 	padding: $u10;
 
 	display: flex;
 	flex-direction: column;
 
 	@include bp(tab) {
+		justify-content: flex-start;
 		padding: $u41 $u71;
 	}
 
@@ -41,11 +42,12 @@
 	& > .main__title {
 		width: auto;
 		height: auto;
-		margin: 0;
+		// margin: 0;
 		clip: auto;
 		overflow: visible;
 		position: static;
 		margin-bottom: $u10;
+		margin-top: auto;
 		font-size: $u24;
 		font-weight: $fw-m;
 
@@ -53,6 +55,8 @@
 
 		@include bp(tab) {
 			text-align: start;
+			margin-top: 0;
+
 			margin-bottom: $u51;
 		}
 	}

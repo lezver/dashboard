@@ -14,6 +14,7 @@
 		@include bp(tab) {
 			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: center;
 
 			& > li > a > img ~ img {
 				display: none;
